@@ -1,0 +1,96 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+<record id="view_hr_overtime_form" model="ir.ui.view">
+		<field name="name">hr.overtime.form</field>
+		<field name="model">hr.overtime</field>
+		<field name="arch" type="xml">
+			<form>
+				<header>
+					<button name="action_submit" type="object" string="Submit" class="oe_highlight" invisible =  "state != 'draft'" />
+					<button name="action_confirm" type="object" string="Confirm" class="oe_highlight" invisible = "state != 'hro'" groups="afag_hr_overtime.group_hr_overtime_officer"/>
+					<button name="action_cancel" type="object" string="Cancel" class="btn-secondary" invisible = "state != 'hro'" />
+                    <field name="state" widget="statusbar"/>
+				</header>
+				<sheet>
+<!--					<div class="oe_button_box" name="button_box">-->
+<!--						<button name="action_lines" type="object" class="oe_stat_button" icon="fa-columns">-->
+<!--							<field name="line_count" string="Columns" widget="statinfo" />-->
+<!--						</button>-->
+<!--					</div>-->
+				<div class="oe_title">
+					<h1>
+						<field name="number" />
+					</h1>
+				</div>
+					<group cols="4">
+							<field name="employee_id" />
+							<field name="department_id" />
+                            <field name="overtime_type" readonly="1" force_save="1"/>
+                            <field name="date" />
+                            <field name="days" invisible = "overtime_type == 'by-hours'"/>
+							<field name="fridays" invisible = "overtime_type == 'by-hours'"/>
+							<field name="calendar_id" />
+							<field name="analytic_account_id" />
+                    </group>
+                    <group>
+                        <field name="notes"/>
+<!--                        <span attrs="{'invisible': [('overtime_type','=','by-hours')]}">Amount: <field name="amount"  readonly="1" attrs="{'invisible': [('overtime_type','=','by-hours')]}"/></span>-->
+                    </group>
+
+                    <field name="line_ids" nolabel="1" invisible="overtime_type == 'by-days'" >
+                        <tree editable="bottom">
+                            <field name="date" required="1"/>
+                            <field name="no_hours"/>
+                        </tree>
+                    </field>
+
+                       <div class="row">
+                            <div class="col-6">
+                                <span invisible = "overtime_type == 'by-days'">Normal Hours: <field name="total_normal_hours" readonly="1" invisible="overtime_type == 'by-days' "/></span><br/>
+                                <span invisible = "overtime_type =='by-days'">Weekend Hours: <field name="total_weekend_hours" readonly="1" invisible="overtime_type == 'by-days' "/></span><br/>
+                                <span invisible = "overtime_type =='by-days'">Holiday Hours: <field name="total_global_leave_hours" readonly="1" invisible="overtime_type == 'by-days' "/></span><br/>
+                                <span>Total Amount: <field name="total_amount" widget='monetary' readonly="1"/></span>
+                            </div>
+                       </div>
+                </sheet>
+            </form>
+        </field>
+</record>
+    <record model="ir.ui.view" id="hr_overtime_list">
+      <field name="name">hr overtime list</field>
+      <field name="model">hr.overtime</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="number"/>
+          <field name="employee_id"/>
+          <field name="overtime_type"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="hr_overtime_action_window">
+      <field name="name">Overtime</field>
+      <field name="res_model">hr.overtime</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <!-- Top menu item -->
+    <menuitem name="Overtime" id="hr_overtime_root" web_icon="afag_hr_overtime,static/description/icon.png"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Requests" id="hr_overtime_requests" parent="hr_overtime_root" action="hr_overtime_action_window"/>
+    <!-- actions -->
+
+    <!--menuitem name="List" id="afag_hr_overtime.menu_1_list" parent="afag_hr_overtime.menu_1"
+              action="afag_hr_overtime.action_window"/>
+    <menuitem name="Server to list" id="afag_hr_overtime" parent="afag_hr_overtime.menu_2"
+              action="afag_hr_overtime.action_server"/-->
+  </data>
+</odoo>

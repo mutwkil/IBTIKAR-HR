@@ -1,0 +1,214 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* payroll_dynamic_xls_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-08 11:48+0000\n"
+"PO-Revision-Date: 2022-10-08 11:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields.selection,name:payroll_dynamic_xls_report.selection__payroll_report_wiz__filter__all
+msgid "All"
+msgstr "الكل"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model,name:payroll_dynamic_xls_report.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr "الحسابات البنكية"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__batch_id
+#: model:ir.model.fields.selection,name:payroll_dynamic_xls_report.selection__payroll_report_wiz__filter__batch
+msgid "Batch"
+msgstr "الحزمة"
+
+#. module: payroll_dynamic_xls_report
+#: model_terms:ir.ui.view,arch_db:payroll_dynamic_xls_report.view_payroll_report_view_form
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__company_id
+#: model:ir.model.fields.selection,name:payroll_dynamic_xls_report.selection__payroll_report_wiz__filter__company
+msgid "Company"
+msgstr "الشركة"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report__create_uid
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_excel__create_uid
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report__create_date
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_excel__create_date
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__department_id
+#: model:ir.model.fields.selection,name:payroll_dynamic_xls_report.selection__payroll_report_wiz__filter__department
+msgid "Department"
+msgstr "الإدارة"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report__display_name
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_excel__display_name
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__display_name
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_res_partner_bank__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: payroll_dynamic_xls_report
+#: model_terms:ir.ui.view,arch_db:payroll_dynamic_xls_report.view_payroll_excel
+msgid "Download Your Payroll Here"
+msgstr ""
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_excel__file_download
+msgid "Download payroll"
+msgstr ""
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__employee_id
+#: model:ir.model.fields.selection,name:payroll_dynamic_xls_report.selection__payroll_report_wiz__filter__employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: payroll_dynamic_xls_report
+#: model_terms:ir.ui.view,arch_db:payroll_dynamic_xls_report.view_payroll_report_view_form
+msgid "Export Excel"
+msgstr "تصدير الاكسل"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_excel__name
+msgid "File Name"
+msgstr "اسم الملف"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__filter
+msgid "Filter"
+msgstr ""
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__from_date
+msgid "From Date"
+msgstr "من تاريخ"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_account_setup_bank_manual_config__iban
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_res_partner_bank__iban
+msgid "IBAN"
+msgstr "الإيبان"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report__id
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_excel__id
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__id
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_res_partner_bank__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report____last_update
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_excel____last_update
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz____last_update
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_res_partner_bank____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report__write_uid
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_excel__write_uid
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report__write_date
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_excel__write_date
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: payroll_dynamic_xls_report
+#: model_terms:ir.ui.view,arch_db:payroll_dynamic_xls_report.view_payroll_report_view_form
+msgid "Or"
+msgstr ""
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.ui.menu,name:payroll_dynamic_xls_report.menu_payroll_excel_report
+msgid "Payroll Excel Report"
+msgstr "اكسل الرواتب"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.actions.act_window,name:payroll_dynamic_xls_report.action_hr_payroll_report_config
+#: model:ir.actions.act_window,name:payroll_dynamic_xls_report.action_payroll_reporting_excel
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__report
+#: model_terms:ir.ui.view,arch_db:payroll_dynamic_xls_report.view_hr_salary_report
+#: model_terms:ir.ui.view,arch_db:payroll_dynamic_xls_report.view_hr_salary_report_tree
+#: model_terms:ir.ui.view,arch_db:payroll_dynamic_xls_report.view_payroll_report_view_form
+msgid "Payroll Report"
+msgstr "تقرير الرواتب"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.ui.menu,name:payroll_dynamic_xls_report.menu_hr_payroll_report
+msgid "Payroll Report Configuration"
+msgstr "إعدادات تقرير الرواتب"
+
+#. module: payroll_dynamic_xls_report
+#: code:addons/payroll_dynamic_xls_report/wizard/payroll_report_wiz.py:0
+#, python-format
+msgid "Payroll Report.xlsx"
+msgstr ""
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report__report_title
+msgid "Report Title"
+msgstr "اسم التقرير"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.ui.menu,name:payroll_dynamic_xls_report.menu_hr_payroll_report_main
+msgid "Reporting"
+msgstr "التقارير"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report__rule_ids
+msgid "Salary Rules"
+msgstr "بنود المرتب"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__show_logo
+msgid "Show Company Logo"
+msgstr "إظهار شعار الشركة"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model.fields,field_description:payroll_dynamic_xls_report.field_payroll_report_wiz__date_end
+msgid "To Date"
+msgstr "الى تاريخ"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model,name:payroll_dynamic_xls_report.model_payroll_report
+msgid "payroll.report"
+msgstr "تقرير الرواتب"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model,name:payroll_dynamic_xls_report.model_payroll_report_excel
+msgid "payroll.report.excel"
+msgstr "اكسل تقرير الرواتب"
+
+#. module: payroll_dynamic_xls_report
+#: model:ir.model,name:payroll_dynamic_xls_report.model_payroll_report_wiz
+msgid "payroll.report.wiz"
+msgstr "تقرير الرواتب"

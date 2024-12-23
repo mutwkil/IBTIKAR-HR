@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+<record id="view_hr_overtime_config_form" model="ir.ui.view">
+		<field name="name">hr.overtime.config</field>
+		<field name="model">hr.overtime.config</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<group cols="4">
+                        <field name="overtime_equation" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+</record>
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="hr_overtime_config_action_window">
+      <field name="name">Overtime Configuration</field>
+      <field name="res_model">hr.overtime.config</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <!-- Top menu item -->
+    <menuitem name="Configuration" id="hr_overtime_config_main_menu" parent="hr_overtime_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Configuration" id="hr_overtime_setting" parent="hr_overtime_config_main_menu" action="hr_overtime_config_action_window"/>
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="afag_hr_overtime.menu_1_list" parent="afag_hr_overtime.menu_1"
+              action="afag_hr_overtime.action_window"/>
+    <menuitem name="Server to list" id="afag_hr_overtime" parent="afag_hr_overtime.menu_2"
+              action="afag_hr_overtime.action_server"/>
+-->
+  </data>
+</odoo>
